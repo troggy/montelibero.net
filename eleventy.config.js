@@ -32,6 +32,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: DEFAULT_LANGUAGE,
   });
+	eleventyConfig.addGlobalData("lang", DEFAULT_LANGUAGE);
 	eleventyConfig.addPlugin(pluginBundle);
   eleventyConfig.addDataExtension("toml", contents => toml.parse(contents));
 
