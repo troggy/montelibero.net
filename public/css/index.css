@@ -41,12 +41,12 @@ TABLE OF CONTENT
 
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url("/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  src: url("{{ '/fonts/PlayfairDisplay-Bold.ttf' | url }}") format("truetype");
 }
 
 @font-face {
   font-family: "FiraSans";
-  src: url("/fonts/FiraSans-Regular.ttf") format("truetype");
+	src: url("{{ '/fonts/FiraSans-Regular.ttf' | url }}") format("truetype");
 }
 
 /*--------------------------------------------------------------
