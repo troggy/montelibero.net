@@ -2,11 +2,11 @@ module.exports = {
 	url: "https://montelibero.me/",
 	languages: [
     {
-      label: "ENG",
+      label: "EN",
       code: "en",
     },
     {
-      label: "RUS",
+      label: "РУ",
       code: "ru",
     }
   ],

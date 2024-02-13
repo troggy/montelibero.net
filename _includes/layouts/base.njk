@@ -20,7 +20,6 @@
 		{#- Add an arbitrary string to the bundle #}
 		{%- css %}* { box-sizing: border-box; }{% endcss %}
 		{#- Add the contents of a file to the bundle #}
-		{% css %}{% include "public/css/pico.classless.min.css" %}{% endcss %}
 		{% css %}{% include "public/css/index.css" %}{% endcss %}
 		{#- Or add from node_modules #}
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
@@ -31,44 +30,71 @@
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 	</head>
 	<body>
-		<header>
-			<nav class="container-fluid">
-				<ul>
-				<li>
-					<a href="{{ '/' | locale_url }}" class="logo">
-						<div class="logo-title">{{ site_title }}</div>
-						<div class="logo-subtitle">{{ site_subtitle }}</div></a>
-					</li>
-				</ul>
-				<ul>
-				{%- for entry in navigation %}
-					{% set page_url = "/" + locale + "/" + entry.slug + "/" %}
-					<li><a href="{{ page_url }}"{% if page_url == page.url %} aria-current="page"{% endif %}>{{ entry.label[locale] }}</a></li>
-				{%- endfor %}
-				</ul>
-				<ul>
-				{%- for lang in metadata.languages %}
-					<li><a href="/{{ lang.code }}/" class="lang-link" {% if lang.code == locale %} aria-current="language"{% endif %}><img src="/img/language-{{ lang.code }}.png" style="height: 28px" /></a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
-			
-		</header>
+		<header role="banner" class="ui-section-header">
+      <div class="ui-layout-container">
+        <div class="ui-section-header__layout ui-layout-flex">
+          <!-- LOGO -->
+					<!--<a href="{{ '/' | locale_url }}" class="ui-section-header--logo">
+          	<div class="ui-section-header--logo-title">{{ site_title }}</div>
+         		<div class="ui-section-header--logo-subtitle">{{ site_subtitle }}</div>
+					</a>-->
+					
+					<a href="{{ '/' | locale_url }}" class="ui-section-header--logo ui-section-header--logo-small">
+          	{{ site_title }}
+					</a>
 
-		<main>
+          <!-- HAMBURGER -->
+          <input type="checkbox" id="ui-section-header--menu-id">
+          <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
+          <!-- MENU -->
+          <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
+						{%- for entry in navigation %}
+							{% set page_url = "/" + locale + "/" + entry.slug + "/" %}
+							<a 
+								href="{{ page_url }}"
+								role="link"
+								class="ui-section-header--nav-link"
+								aria-label="{{ entry.label[locale] }}"
+								{% if page_url == page.url %}aria-current="page"{% endif %}
+							>
+									{{ entry.label[locale] }}
+							</a>
+						{%- endfor %}
+						<div class="ui-section-header--lang">
+							{%- for lang in metadata.languages %}
+								<a
+									href="/{{ lang.code }}/"
+									role="link"
+									class="ui-section-header--lang-link"
+									aria-label="{{ lang.label }}"
+									{% if lang.code == locale %} aria-current="language"{% endif %}
+								>
+									<span>{{ lang.label }}</span>
+								</a>
+							{%- endfor %}
+						</div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main role="main">
 			{{ content | safe }}
 		</main>
-
-		<footer>
-			<nav>
-          <ul>
-            <li>
-              <small> {{ project_of_tfm }}, 2023
-							</small>
-						</li>
-					</ul>
-				</nav>
-		</footer>
+		<footer role="contentinfo" class="ui-section-footer">
+      <div class="ui-layout-container">
+        <div class="ui-section-footer__layout ui-layout-flex">
+          <!-- COPYRIGHT -->
+          <p class="ui-section-footer--copyright ui-text-note"><small>{{ project_of_tfm }}, 2023</small></p>
+          <!-- MENU -->
+					<!-- TODO: add click tracker -->
+          <a href="https://t.me/Seasteading_EastEurope" role="link" aria-label="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#AEAEAE" viewBox="0 0 256 256">
+              <path d="M236.88,26.19a9,9,0,0,0-9.16-1.57L25.06,103.93a14.22,14.22,0,0,0,2.43,27.21L80,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L173,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L239.77,35A9,9,0,0,0,236.88,26.19Zm-61.14,36L86.15,126.35l-49.6-9.73ZM96,200V152.52l24.79,21.74Zm87.53,8L100.85,135.5l119-85.29Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
-	</body>
+  </body>
 </html>
