@@ -33,5 +33,15 @@ npm start
 
 ## Editing content
 
+Редакторы работают c текстами только в файлами в папке `content`, а также дополнительно могут положить медиа-файлы в папку `public/`. 
+
+Базовый сценарий таков:
+
+Редактор вносит правки в контент на русском языке в папке `/content/ru/`. Например, используя встроенный редактор гитхаба: https://github.com/troggy/montelibero.me/edit/master/content/ru/ru.toml (пример для стартовой страницы). 
+
+Для сохранения правок создаётся гит-ветка
+![Screen Recording 2024-02-12 at 23 55 29](https://github.com/troggy/montelibero.me/assets/163447/e20e3f46-a909-4649-8a2c-3098ed7fe42d)
+
+
 ## Production deployment
 
