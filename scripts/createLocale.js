@@ -10,7 +10,7 @@ console.log('Creating locale:', locale);
 
 const baseLocaleFolder = './content/ru';
 const newLocaleFolder = `./content/${locale}`;
-const originalsFolder = `./content/.originals/${locale}`;
+const originalsFolder = `./.content-baseline/${locale}`;
 
 if (fs.pathExistsSync(newLocaleFolder)) {
   console.error('Locale already exists at', newLocaleFolder);

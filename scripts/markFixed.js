@@ -22,7 +22,7 @@ rl.question(`Are you sure you have already updated the translation for locale "$
   }
 
   const baseLocaleFolder = './content/ru';
-  const originalsFolder = `./content/.originals/${locale}`;
+  const originalsFolder = `./.content-baseline/${locale}`;
   fs.copySync(baseLocaleFolder, originalsFolder);
   console.log(`Marked translation for locale "${locale}" as up-to-date`);
 });

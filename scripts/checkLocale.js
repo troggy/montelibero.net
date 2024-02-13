@@ -10,7 +10,7 @@ if (!locale) {
 }
 
 (async () => {
-  const originalsFolder = `./content/.originals/${locale}`;
+  const originalsFolder = `./.content-baseline/${locale}`;
 
   await new Promise((resolve) => {
     exec(`diff --unified --recursive ${baseLocaleFolder} ${originalsFolder} | ./node_modules/.bin/diff2html -i stdin`, (error, stdout, stderr) => {
