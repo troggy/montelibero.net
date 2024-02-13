@@ -4,20 +4,20 @@
   "description": "Lightweight landing page for Montelibero movement",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/endophasie/montelibero.me.git"
+    "url": "git+https://github.com/troggy/montelibero.me.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/endophasie/montelibero.me/issues"
+    "url": "https://github.com/troggy/montelibero.me/issues"
   },
-  "homepage": "https://github.com/endophasie/montelibero.me#readme",
+  "homepage": "https://github.com/troggy/montelibero.me#readme",
   "engines": {
     "node": ">=16.x.x"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "build-ghpages": "npx @11ty/eleventy",
+    "build-ghpages": "env NODE_ENV=production npx @11ty/eleventy --pathprefix 'montelibero.me'",
     "start": "npx @11ty/eleventy --serve --quiet",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
@@ -35,6 +35,5 @@
     "toml": "^3.0.0"
   },
   "dependencies": {
-    "@picocss/pico": "^1.5.10"
   }
 }
