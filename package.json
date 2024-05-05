@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "build-ghpages": "env NODE_ENV=production npx @11ty/eleventy --pathprefix 'montelibero.me'",
+    "build-ghpages": "env NODE_ENV=production npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve --quiet",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
