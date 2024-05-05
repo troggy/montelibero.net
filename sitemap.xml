@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://montelibero.net/montelibero.me/ru/business/</loc>
+		<loc>https://montelibero.net/ru/business/</loc>
 		<lastmod>2024-05-05</lastmod>
-		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/montelibero.me/ru/business/" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/montelibero.me/en/business/" />
+		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/ru/business/" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/en/business/" />
 	</url>
 	
 	<url>
-		<loc>https://montelibero.net/montelibero.me/ru/city/</loc>
+		<loc>https://montelibero.net/ru/city/</loc>
 		<lastmod>2024-05-05</lastmod>
-		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/montelibero.me/ru/city/" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/montelibero.me/en/city/" />
+		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/ru/city/" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/en/city/" />
 	</url>
 	
 	<url>
-		<loc>https://montelibero.net/montelibero.me/ru/</loc>
+		<loc>https://montelibero.net/ru/</loc>
 		<lastmod>2024-05-05</lastmod>
-		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/montelibero.me/ru/" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/montelibero.me/en/" />
+		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/ru/" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/en/" />
 	</url>
 	
 	<url>
-		<loc>https://montelibero.net/montelibero.me/ru/montenegro/</loc>
+		<loc>https://montelibero.net/ru/montenegro/</loc>
 		<lastmod>2024-05-05</lastmod>
-		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/montelibero.me/ru/montenegro/" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/montelibero.me/en/montenegro/" />
+		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/ru/montenegro/" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/en/montenegro/" />
 	</url>
 	
 	<url>
-		<loc>https://montelibero.net/montelibero.me/ru/tokenomics/</loc>
+		<loc>https://montelibero.net/ru/tokenomics/</loc>
 		<lastmod>2024-05-05</lastmod>
-		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/montelibero.me/ru/tokenomics/" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/montelibero.me/en/tokenomics/" />
+		<xhtml:link rel="alternate" hreflang="ru" href="https://montelibero.net/ru/tokenomics/" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://montelibero.net/en/tokenomics/" />
 	</url>
 </urlset>
