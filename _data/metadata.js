@@ -1,5 +1,5 @@
 module.exports = {
-	url: "https://montelibero.me/",
+	url: "https://montelibero.net/",
 	languages: [
     {
       label: "EN",
