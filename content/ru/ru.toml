@@ -2,7 +2,7 @@ locale = "ru"
 site_title = "Монтелиберо"
 site_subtitle = "Проект Свободного Общества в Европе"
 meta_description = "Либертарианский социальный эксперимент в Черногории"
-project_of_tfm = "Проект Третьего Фонда Монтелиберо"
+made_by = ""
 join_telegram = "Присоединиться в Телеграм"
 
 [what_is_montelibero]
