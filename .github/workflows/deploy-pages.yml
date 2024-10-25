@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - redirect-setup
 
 jobs:
   build:
