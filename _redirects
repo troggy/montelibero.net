@@ -2,7 +2,8 @@
 # content files are served without redirects.
 
 # Redirect for end-user’s browser preference override
-/*  /en/:splat  302   Language=en
+#/*  /en/:splat  302   Language=en
 
 # Default
-/*  /ru/:splat  302
+#/*  /ru/:splat  302
+
