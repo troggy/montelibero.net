@@ -1,5 +1,7 @@
 
 <script>
-const target = new URL(decodeURIComponent(new URLSearchParams(window.location.search).get("to")));
-window.location = target.toString();
+const target = new URL(new URLSearchParams(window.location.search).get("to"));
+if (target.protocol === 'web+stellar:' && !target.host && !target.hash && ['tx', 'pay'].includes(target.pathname)) {
+    window.location = target.toString();
+}
 </script>
