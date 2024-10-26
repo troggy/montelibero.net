@@ -1,0 +1,11 @@
+
+<script>
+
+const isInTelegramBrowser = () => typeof window.TelegramWebview !== 'undefined';
+
+if (isInTelegramBrowser()) {
+    document.write('Browser: Telegram In-App')
+} else {
+    document.write('Browser: Regular')
+}
+</script>
