@@ -5,7 +5,9 @@
   "relays": {
     "8e9f64b35e7e4384b5248f1d4294f109bb8d3442b04d7c59a62c04e702441488": [
       "wss://nos.lol",
-      "wss://relay.primal.net/"
+      "wss://relay.primal.net/",
+      "wss://relay.nostr.band/",
+      "wss://relay.nostr.band/"
     ]
   }
 }
